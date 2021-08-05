@@ -5,32 +5,13 @@ import "./App.scss";
 
 import HomePage from "./pages/HomePage/HomePage";
 import ShopPage from "./pages/ShopPage/ShopPage";
+import Header from "./components/Header/Header";
 
-const TopicsList = () => {
-	return (
-		<div>
-			<h1>Hats Page</h1>
-		</div>
-	);
-};
-const TopicDetail = () => {
-	return (
-		<div>
-			<h1>Hats Page</h1>
-		</div>
-	);
-};
-const HatsPage = () => {
-	return (
-		<div>
-			<h1>Hats Page</h1>
-		</div>
-	);
-};
 
 function App() {
 	return (
 		<div>
+			<Header />
 			<Switch>
 				<Route exact path="/" component={HomePage} />
 				<Route path="/shop" component={ShopPage} />
