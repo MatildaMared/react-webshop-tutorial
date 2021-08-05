@@ -2,7 +2,9 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import "./App.scss";
-import Home from "./pages/Home/Home";
+
+import HomePage from "./pages/HomePage/HomePage";
+import ShopPage from "./pages/ShopPage/ShopPage";
 
 const TopicsList = () => {
 	return (
@@ -30,10 +32,8 @@ function App() {
 	return (
 		<div>
 			<Switch>
-				<Route exact path="/" component={Home} />
-				<Route path="/hats" component={HatsPage} />
-				<Route exact path="/topics" component={TopicsList} />
-				<Route path="/topics/:topicId" component={TopicDetail} />
+				<Route exact path="/" component={HomePage} />
+				<Route path="/shop" component={ShopPage} />
 			</Switch>
 		</div>
 	);
