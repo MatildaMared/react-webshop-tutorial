@@ -23,6 +23,7 @@ $main-color: rgb(51, 51, 51);
     border-radius: 0;
     border-bottom: 1px solid $sub-color;
     margin: 25px 0;
+    font-family: inherit;
 
     &:focus {
       outline: none;
